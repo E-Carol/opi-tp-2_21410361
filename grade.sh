@@ -1,6 +1,7 @@
 #!/bin/bash
 #
 # AUTHOR: Mathieu MONEYRON - 2026
+# AUTHOR: Carol ATAMECH - 2026
 # LICENCE: GPL-2.0
 
 [ $# -eq 0 ] && echo Please provide a directory with grade files && exit 1
