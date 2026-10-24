@@ -6,9 +6,9 @@
 
 [ $# -eq 0 ] && echo Please provide a directory with grade files && exit 1
 dir=$1
-echo "Year,2026"
+echo "Année,2026"
 # Print csv header
-echo "Student,Grade"
+echo "Etudiant,Note"
 
 # Initialize grades list used to compute mean value
 grades=""
@@ -50,6 +50,6 @@ num=$(ls $dir/* | wc -l)
 sum=$(echo $grades | sed "s/ /+/")
 mean=$(echo "scale=2; ($sum) / $num" | bc -l)
 
-echo "Number of students,$num"
+echo "Nombre d'étudiants,$num"
 echo "Mean,$mean"
 echo "Teacher,Mathieu Moneyron"
